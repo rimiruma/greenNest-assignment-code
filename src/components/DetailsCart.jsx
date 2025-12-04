@@ -91,7 +91,7 @@ const DetailsCart = ({ plant }) => {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="px-10 sm:px-16 py-2.5 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-full shadow-md cursor-pointer transition transform hover:scale-105"
+              className="px-24 py-2.5 bg-green-100 text-black hover:bg-green-700 hover:text-white font-semibold rounded-full shadow-md cursor-pointer transition transform hover:scale-105"
             >
               Book Now
             </button>

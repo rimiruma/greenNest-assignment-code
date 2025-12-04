@@ -19,7 +19,7 @@ const Meet = () => {
       </div>
 
       {/* Main Section */}
-      <div className="flex flex-col md:flex-row items-center justify-between bg-white rounded-3xl shadow-lg overflow-hidden max-w-6xl mx-auto">
+      <div className="flex flex-col md:flex-row items-center justify-between bg-green-100 rounded-3xl shadow-lg overflow-hidden max-w-6xl mx-auto">
         
         {/* Left Side Image */}
         <div className="w-full md:w-1/2 h-[250px] sm:h-[350px] md:h-[450px]">
@@ -111,7 +111,7 @@ const Meet = () => {
           </div>
 
           {/* Button */}
-          <button className="bg-green-600 text-white px-6 sm:px-8 py-2 rounded-full font-semibold hover:bg-green-500 cursor-pointer transition text-sm sm:text-base">
+          <button className="bg-green-200 text-black p-3 px-6 sm:px-8 rounded-full font-semibold cursor-pointer transition text-sm sm:text-base">
             Learn More About Our Team
           </button>
         </div>

@@ -11,107 +11,77 @@ import bannerImage4 from "../assets/download (93).png";
 
 const Banner = () => {
   return (
-    <div className="w-full h-[55vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh]">
-      <Swiper
-        spaceBetween={20}
-        centeredSlides={true}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
-        pagination={{ clickable: true }}
-        navigation={true}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper h-full"
-      >
-        {/* Slide 1 */}
-        <SwiperSlide>
-          <div className="relative w-full h-full">
-            <img
-              src={bannerImage}
-              alt="Bring Nature Home"
-              className="w-full h-full object-cover brightness-75"
-            />
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4 sm:px-6 md:px-10 py-10 sm:py-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3">
-                Bring Nature Home
-              </h2>
-              <p className="text-sm sm:text-base md:text-lg max-w-xs sm:max-w-md md:max-w-2xl mx-auto mb-4 sm:mb-6">
-                Discover beautiful indoor plants to freshen up your living space and purify your air.
-              </p>
-              <button className="px-4 sm:px-6 py-2 sm:py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md transition text-sm sm:text-base md:text-lg">
-                Shop Now
-              </button>
-            </div>
-          </div>
-        </SwiperSlide>
+    <div className="w-full">
+      <div className="max-w-[1200px] mx-auto h-[55vh] sm:h-[60vh] md:h-[70vh] overflow-hidden shadow-lg">
+        <Swiper
+          spaceBetween={0}
+          centeredSlides={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          pagination={{ clickable: true }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper h-full"
+        >
+          {[
+            {
+              img: bannerImage,
+              title: "Bring Nature Home",
+              desc: "Discover beautiful indoor plants to freshen up your living space and purify your air.",
+              btn: "Shop Now",
+            },
+            {
+              img: bannerImage2,
+              title: "Fresh Green Collection",
+              desc: "Add life to your room with low-maintenance plants perfect for beginners.",
+              btn: "Explore More",
+            },
+            {
+              img: bannerImage3,
+              title: "Care with Love",
+              desc: "Everything you need to keep your plants healthy, vibrant, and thriving.",
+              btn: "Learn More",
+            },
+            {
+              img: bannerImage4,
+              title: "Grow Your Own Garden",
+              desc: "From balconies to backyards — create your personal green paradise.",
+              btn: "Get Started",
+            },
+          ].map((item, idx) => (
+            <SwiperSlide key={idx}>
+              <div className="relative w-full h-full">
+                {/* Background Image */}
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-full object-cover brightness-75"
+                />
 
-        {/* Slide 2 */}
-        <SwiperSlide>
-          <div className="relative w-full h-full">
-            <img
-              src={bannerImage2}
-              alt="Fresh Green Collection"
-              className="w-full h-full object-cover brightness-75"
-            />
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4 sm:px-6 md:px-10 py-10 sm:py-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3">
-                Fresh Green Collection
-              </h2>
-              <p className="text-sm sm:text-base md:text-lg max-w-xs sm:max-w-md md:max-w-2xl mx-auto mb-4 sm:mb-6">
-                Add life to your room with low-maintenance plants perfect for beginners.
-              </p>
-              <button className="px-4 sm:px-6 py-2 sm:py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md transition text-sm sm:text-base md:text-lg">
-                Explore More
-              </button>
-            </div>
-          </div>
-        </SwiperSlide>
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/10" />
 
-        {/* Slide 3 */}
-        <SwiperSlide>
-          <div className="relative w-full h-full">
-            <img
-              src={bannerImage3}
-              alt="Care with Love"
-              className="w-full h-full object-cover brightness-75"
-            />
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4 sm:px-6 md:px-10 py-10 sm:py-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3">
-                Care with Love
-              </h2>
-              <p className="text-sm sm:text-base md:text-lg max-w-xs sm:max-w-md md:max-w-2xl mx-auto mb-4 sm:mb-6">
-                Everything you need to keep your plants healthy, vibrant, and thriving.
-              </p>
-              <button className="px-4 sm:px-6 py-2 sm:py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md transition text-sm sm:text-base md:text-lg">
-                Learn More
-              </button>
-            </div>
-          </div>
-        </SwiperSlide>
+                {/* Text Content */}
+                <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-6">
+                  <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold drop-shadow-lg mb-3">
+                    {item.title}
+                  </h2>
 
-        {/* Slide 4 */}
-        <SwiperSlide>
-          <div className="relative w-full h-full">
-            <img
-              src={bannerImage4}
-              alt="Grow Your Own Garden"
-              className="w-full h-full object-cover brightness-75"
-            />
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white px-4 sm:px-6 md:px-10 py-10 sm:py-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3">
-                Grow Your Own Garden
-              </h2>
-              <p className="text-sm sm:text-base md:text-lg max-w-xs sm:max-w-md md:max-w-2xl mx-auto mb-4 sm:mb-6">
-                From balconies to backyards — create your personal green paradise.
-              </p>
-              <button className="px-4 sm:px-6 py-2 sm:py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg shadow-md transition text-sm sm:text-base md:text-lg">
-                Get Started
-              </button>
-            </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
+                  <p className="text-sm sm:text-base md:text-lg max-w-xl mx-auto mb-6 opacity-90">
+                    {item.desc}
+                  </p>
+
+                  <button className="px-20 py-3 bg-green-200 cursor-pointer text-black font-semibold shadow-lg transition-all duration-300">
+                    {item.btn}
+                  </button>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };

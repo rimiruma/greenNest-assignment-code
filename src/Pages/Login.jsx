@@ -52,7 +52,7 @@ const Login = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-50 px-4 sm:px-6">
       <div className="w-full max-w-md p-6 sm:p-8 space-y-6 bg-white shadow-lg sm:shadow-xl rounded-2xl">
-        <h2 className="text-2xl sm:text-3xl font-semibold text-center text-green-700">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-center text-green-300">
           Login Your Account!
         </h2>
 
@@ -81,7 +81,7 @@ const Login = () => {
               name="password"
               required
               placeholder="Enter your password"
-              className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-green-400 outline-none pr-10 text-sm sm:text-base"
+              className="w-full px-4 py-2 border rounded-md focus:ring-2 focus:ring-green-600 outline-none pr-10 text-sm sm:text-base"
             />
             <div
               className="absolute right-3 top-[38px] text-gray-500 cursor-pointer hover:text-green-600"
@@ -94,17 +94,17 @@ const Login = () => {
 
           <button
             type="submit"
-            className="w-full py-2 font-semibold text-white bg-green-600 rounded-md hover:bg-green-700 transition cursor-pointer text-sm sm:text-base"
+            className="w-full py-2 font-semibold bg-green-100 rounded-md transition cursor-pointer text-sm sm:text-base"
           >
             Login
           </button>
         </form>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-xs sm:text-sm mt-3">
-          <p>Don't have an account?</p>
+          <p className="">Don't have an account?</p>
           <Link
             to="/register"
-            className="text-green-600 hover:underline font-medium"
+            className="text-green-700 hover:underline font-medium"
           >
             Register here
           </Link>

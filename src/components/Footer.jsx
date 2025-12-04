@@ -1,52 +1,66 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300">
-      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-gray-900 text-gray-300 pt-12">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+
         {/* Brand Section */}
         <div>
-          <h2 className="text-2xl font-bold text-green-400 mb-3">GreenNest</h2>
-          <p className="text-sm leading-relaxed">
-            Bringing nature closer to you with fresh, beautiful, and healthy plants for every space.
+          <h2 className="text-2xl font-bold mb-3 flex items-center">
+            <span className="mr-2 text-2xl">🏠</span> HomeNest
+          </h2>
+          <p className=" text-gray-400 leading-relaxed">
+            HomeNest – A Real Estate Listing Portal where you can buy, sell, or rent your dream property with ease and trust.
           </p>
         </div>
 
-        {/* Quick Links */}
+        {/* Contact Section */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-3">Quick Links</h3>
-          <ul className="space-y-2 text-sm">
-            <li><Link to="/" className="hover:text-green-400 transition">Home</Link></li>
-            <li><Link to="/plants" className="hover:text-green-400 transition">Plants</Link></li>
-            <li><Link to="/about" className="hover:text-green-400 transition">About</Link></li>
-            <li><Link to="/contact" className="hover:text-green-400 transition">Contact</Link></li>
+          <h3 className="text-lg font-semibold mb-3 text-white">Contact Us</h3>
+          <ul className="space-y-2 text-gray-400">
+            <li>
+              <span className="mr-2">📍</span> Dhaka, Bangladesh
+            </li>
+            <li>
+              <span className="mr-2">📞</span> +880 1234 567890
+            </li>
+            <li>
+              <span className="mr-2">✉️</span> support@homenest.com
+            </li>
           </ul>
         </div>
 
-        {/* Social Media */}
+        {/* Quick Links + Social Media */}
         <div>
-          <h3 className="text-lg font-semibold text-white mb-3">Follow Us</h3>
-          <div className="flex space-x-4 text-gray-300">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer">
-              <FaFacebookF className="hover:text-green-400 transition" />
+          <h3 className="text-lg font-semibold mb-3 text-white">Quick Links</h3>
+          <ul className="space-y-2 mb-4">
+            <li><Link to="/terms" className="hover:text-green-400 transition">Terms & Conditions</Link></li>
+            <li><Link to="/privacy" className="hover:text-green-400 transition">Privacy Policy</Link></li>
+          </ul>
+
+          <h3 className="text-lg font-semibold mb-3 text-white">Follow Us</h3>
+          <div className="flex space-x-4">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-green-400 transition text-xl">
+              <FaFacebookF />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
-              <FaTwitter className="hover:text-green-400 transition" />
+            <a href="https://twitter.com" target="_blank" rel="noreferrer" className="hover:text-green-400 transition text-xl">
+              <FaTwitter />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
-              <FaInstagram className="hover:text-green-400 transition" />
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-green-400 transition text-xl">
+              <FaInstagram />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
-              <FaLinkedinIn className="hover:text-green-400 transition" />
+            <a href="https://youtube.com" target="_blank" rel="noreferrer" className="hover:text-green-400 transition text-xl">
+              <FaYoutube />
             </a>
           </div>
         </div>
       </div>
 
       {/* Copyright */}
-      <div className="border-t border-gray-700 py-4 text-center text-sm text-gray-400">
-        © {new Date().getFullYear()} GreenNest — All rights reserved.
+      <div className="border-t border-gray-700 mt-8 py-4 text-center text-sm text-gray-400">
+        © {new Date().getFullYear()} <span className="text-green-400 font-semibold">HomeNest.</span> All Rights Reserved.
       </div>
     </footer>
   );

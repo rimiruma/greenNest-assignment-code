@@ -15,7 +15,7 @@ const TopPlants = () => {
     }, []);
 
     return (
-        <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="max-w-[1200px] mx-auto px-6 py-12">
             <div className="text-center max-w-2xl mx-auto mb-12">
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
                     Top Plants
@@ -55,7 +55,7 @@ const TopPlants = () => {
                             <div className="mt-auto">
                                 <Link
                                     to={`/plants-details/${plant.plantId}`}
-                                    className="btn w-full text-center px-10 py-2.5 bg-lime-600 hover:bg-lime-800  text-white font-semibold rounded-full shadow-md cursor-pointer">
+                                    className="btn w-full text-center px-10 py-2.5 bg-green-100 hover:bg-lime-800  text-black hover:text-white font-semibold rounded-full shadow-md cursor-pointer">
                                     View Details
                                 </Link>
                             </div>

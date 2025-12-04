@@ -11,6 +11,8 @@ import AuthLayout from '../Layouts/AuthLayout';
 import Login from '../Pages/Login';
 import Profile from '../components/Profile';
 import UpdateProfile from '../components/UpdateProfile';
+import AboutSection from '../components/AboutSection';
+import ContactSection from '../components/ContactUs';
 
 
 const router = createBrowserRouter([
@@ -36,6 +38,14 @@ const router = createBrowserRouter([
         </PrivateRoute>,
         loader: () => fetch("/plants.json")
       },
+      {
+        path: '/about-us',
+        Component: AboutSection
+      },
+      {
+        path: '/contact-us',
+        Component: ContactSection
+      }
     ],
   },
   {

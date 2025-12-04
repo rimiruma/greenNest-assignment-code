@@ -2,7 +2,7 @@ import React from "react";
 
 const PlantOfTheWeek = () => {
   return (
-    <section className="bg-green-50 py-16 px-6">
+    <section className="bg-green-50 py-16 px-6 max-w-[1160px] mx-auto">
       <h2 className="text-3xl font-bold text-center text-green-700 mb-12">
         Plant of the Week
       </h2>
@@ -25,7 +25,7 @@ const PlantOfTheWeek = () => {
             light and needs little water. Perfect for busy plant lovers who want
             fresh air and modern greenery indoors.
           </p>
-          <button className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition">
+          <button className="bg-green-100 text-black hover:bg-lime-800 px-20 hover:text-white cursor-pointer p-3 rounded-lg transition">
             Learn More
           </button>
         </div>

@@ -46,7 +46,7 @@ const UpdateProfile = () => {
         onSubmit={handleUpdate}
         className="bg-white shadow-md rounded-lg p-6 max-w-md w-full"
       >
-        <h1 className="text-2xl font-bold mb-4 text-center text-blue-600">
+        <h1 className="text-2xl font-bold mb-4 text-center text-green-300">
           Update Profile
         </h1>
 
@@ -94,7 +94,7 @@ const UpdateProfile = () => {
         {/* Submit Button */}
         <button
           type="submit"
-          className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg cursor-pointer transition duration-200"
+          className="w-full bg-green-100 py-2 rounded-lg cursor-pointer transition duration-200"
         >
           Update Information
         </button>

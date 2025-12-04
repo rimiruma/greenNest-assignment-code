@@ -31,7 +31,7 @@ const PlantCare = () => {
             deeper than the container your plant came in when you purchased it.
           </p>
 
-          <button className="font-semibold btn px-20  py-3 rounded-full cursor-pointer text-gray-900 bg-yellow-400">
+          <button className="font-semibold btn px-20  py-3 cursor-pointer bg-green-100 text-black hover:bg-lime-800 hover:text-white">
             Learn More
           </button>
         </div>

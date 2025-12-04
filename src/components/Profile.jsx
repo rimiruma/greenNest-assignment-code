@@ -9,7 +9,7 @@ const Profile = () => {
 
   return (
     <div className="p-10 bg-gray-100 min-h-screen">
-      <h1 className="text-3xl font-bold text-center mb-6">
+      <h1 className="text-3xl font-bold text-center mb-6 text-green-400">
         Welcome, {user?.displayName || "User"}!
       </h1>
 
@@ -28,7 +28,7 @@ const Profile = () => {
 
         <button
           onClick={() => navigate("/auth/updateProfile")}
-          className="mt-4 w-full bg-blue-500 hover:bg-blue-600 cursor-pointer text-white py-2 rounded-lg"
+          className="mt-4 w-full bg-green-100 cursor-pointer text-black py-2 rounded-lg"
         >
           Update Profile
         </button>
