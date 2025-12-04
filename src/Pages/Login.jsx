@@ -50,8 +50,8 @@ const Login = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-50 px-4 sm:px-6">
-      <div className="w-full max-w-md p-6 sm:p-8 space-y-6 bg-white shadow-lg sm:shadow-xl rounded-2xl">
+    <div className="flex items-center dark:bg-black justify-center min-h-screen bg-gray-50 px-4 sm:px-6">
+      <div className="w-full max-w-md dark:bg-black p-6 sm:p-8 space-y-6 bg-white shadow-lg sm:shadow-xl rounded-2xl">
         <h2 className="text-2xl sm:text-3xl font-semibold text-center text-green-300">
           Login Your Account!
         </h2>
@@ -59,7 +59,7 @@ const Login = () => {
         <form onSubmit={handleLogin} className="space-y-4">
           {/* Email */}
           <div>
-            <label className="block mb-1 font-medium text-gray-700 text-sm sm:text-base">
+            <label className="block mb-1 dark:text-white font-medium text-gray-700 text-sm sm:text-base">
               Email
             </label>
             <input
@@ -73,7 +73,7 @@ const Login = () => {
 
           {/* Password */}
           <div className="relative">
-            <label className="block mb-1 font-medium text-gray-700 text-sm sm:text-base">
+            <label className="block mb-1 dark:text-white font-medium text-gray-700 text-sm sm:text-base">
               Password
             </label>
             <input
@@ -94,7 +94,7 @@ const Login = () => {
 
           <button
             type="submit"
-            className="w-full py-2 font-semibold bg-green-100 rounded-md transition cursor-pointer text-sm sm:text-base"
+            className="w-full py-2 font-semibold dark:text-black bg-green-100 rounded-md transition cursor-pointer text-sm sm:text-base"
           >
             Login
           </button>

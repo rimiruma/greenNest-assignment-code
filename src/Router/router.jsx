@@ -33,9 +33,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/plants-details/:id',
-        element: <PrivateRoute>
-          <PlantsDetails></PlantsDetails>
-        </PrivateRoute>,
+        Component: PlantsDetails,
         loader: () => fetch("/plants.json")
       },
       {

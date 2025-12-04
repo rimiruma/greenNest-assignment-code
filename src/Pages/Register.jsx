@@ -104,8 +104,8 @@ const Register = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-50 px-4 sm:px-6">
-      <div className="w-full max-w-md p-6 sm:p-8 space-y-6 bg-white shadow-lg sm:shadow-xl rounded-2xl border border-green-100">
+    <div className="flex items-center justify-center min-h-screen bg-gray-50 px-4 sm:px-6 dark:bg-black">
+      <div className="w-full max-w-md p-6 sm:p-8 space-y-6 bg-white shadow-lg sm:shadow-xl dark:bg-black rounded-2xl border border-green-100">
         <h2 className="text-2xl sm:text-3xl font-semibold text-center text-green-300">
           Create Your Account
         </h2>
@@ -113,7 +113,7 @@ const Register = () => {
         <form onSubmit={handleRegister} className="space-y-4">
           {/* Name */}
           <div>
-            <label className="block mb-1 font-medium text-gray-700 text-sm sm:text-base">
+            <label className="block mb-1 dark:text-white font-medium text-gray-700 text-sm sm:text-base">
               Name
             </label>
             <input
@@ -127,7 +127,7 @@ const Register = () => {
 
           {/* Email */}
           <div>
-            <label className="block mb-1 font-medium text-gray-700 text-sm sm:text-base">
+            <label className="block mb-1 dark:text-white font-medium text-gray-700 text-sm sm:text-base">
               Email
             </label>
             <input
@@ -142,7 +142,7 @@ const Register = () => {
 
           {/* Photo URL */}
           <div>
-            <label className="block mb-1 font-medium text-gray-700 text-sm sm:text-base">
+            <label className="block mb-1 dark:text-white font-medium text-gray-700 text-sm sm:text-base">
               Photo URL
             </label>
             <input
@@ -188,7 +188,7 @@ const Register = () => {
           </div>
           <button
             type="submit"
-            className="w-full py-2 text-sm sm:text-base font-semibold bg-green-100 cursor-pointer rounded-md transition"
+            className="w-full py-2 dark:text-black text-sm sm:text-base font-semibold bg-green-100 cursor-pointer rounded-md transition"
           >
             Register
           </button>

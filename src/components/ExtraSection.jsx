@@ -1,13 +1,13 @@
 const ExtraSection = () => {
   return (
     <div className="">
-      <section className="bg-gray-50 py-12 px-4 sm:px-6 md:px-12">
+      <section className="bg-gray-50 dark:bg-black py-12 px-4 sm:px-6 md:px-12">
         {/* Text Header Section */}
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-16">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
             Bring Nature Into Your Home
           </h1>
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed px-2 sm:px-0">
+          <p className="text-gray-600 dark:text-white text-sm sm:text-base leading-relaxed px-2 sm:px-0">
             Discover the joy of indoor gardening and create a peaceful, green space
             inside your home. Learn how to care for plants, choose the right containers,
             and make your indoor jungle thrive beautifully.
@@ -26,16 +26,16 @@ const ExtraSection = () => {
           </div>
 
           {/* Text Content Section */}
-          <div className="w-full md:w-1/2 bg-green-100 text-black flex flex-col justify-center p-6 sm:p-8 md:p-12">
+          <div className="w-full md:w-1/2 bg-green-100 dark:bg-black dark:text-white text-black flex flex-col justify-center p-6 sm:p-8 md:p-12">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
               Indoor Gardening Made Easy
             </h2>
-            <p className="mb-6 text-sm sm:text-base leading-relaxed text-black">
+            <p className="mb-6 text-sm sm:text-base leading-relaxed text-black dark:text-white">
               Whether you’re growing an indoor jungle or starting out with your
               first plant baby, we’re here to make indoor gardening simple,
               stress-free, and fun!
             </p>
-            <ul className="list-disc list-inside space-y-2 mb-8 text-black text-sm sm:text-base">
+            <ul className="list-disc list-inside space-y-2 mb-8 dark:text-white text-black text-sm sm:text-base">
               <li>How to Care for Houseplants</li>
               <li>Identifying Common Houseplant Problems</li>
               <li>Ultimate Guide to Apartment Gardening</li>

@@ -17,10 +17,10 @@ const TopPlants = () => {
     return (
         <div className="max-w-[1200px] mx-auto px-6 py-12">
             <div className="text-center max-w-2xl mx-auto mb-12">
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+                <h1 className="text-4xl md:text-5xl dark:text-white font-bold text-gray-800 mb-4">
                     Top Plants
                 </h1>
-                <p className="text-gray-600">
+                <p className="text-gray-600 dark:text-white">
                     Discover our best-rated plants, loved for their beauty and easy care.
                 </p>
             </div>
@@ -29,7 +29,7 @@ const TopPlants = () => {
                 {plants.map((plant) => (
                     <div
                         key={plant.plantId}
-                        className="bg-white shadow-md rounded-xl overflow-hidden border border-gray-100 flex flex-col h-full"
+                        className=" shadow-md rounded-xl overflow-hidden border border-gray-100 flex flex-col h-full"
                     >
                         <img
                             src={plant.image}
@@ -38,10 +38,10 @@ const TopPlants = () => {
                         />
 
                         <div className="p-5 flex flex-col flex-grow">
-                            <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                            <h3 className="text-xl font-semibold  mb-2">
                                 {plant.plantName}
                             </h3>
-                            <p className="text-gray-500 text-sm mb-4 flex-grow">
+                            <p className="text-gray-500 dark:text-white text-sm mb-4 flex-grow">
                                 {plant.description.length > 80
                                     ? plant.description.slice(0, 80) + "..."
                                     : plant.description}

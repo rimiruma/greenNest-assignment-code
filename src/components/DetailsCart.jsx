@@ -17,7 +17,7 @@ const DetailsCart = ({ plant }) => {
   if (!plant) return null;
 
   return (
-    <div className="max-w-5xl mx-auto space-y-10 px-4 sm:px-6 md:px-8 py-10">
+    <div className="max-w-5xl dark:bg-black mx-auto space-y-10 px-4 sm:px-6 md:px-8 py-10">
       {/* Image Section */}
       <div className="w-full">
         <img
@@ -28,11 +28,11 @@ const DetailsCart = ({ plant }) => {
       </div>
 
       {/* Plant Details Section */}
-      <div className="bg-gray-50 p-5 sm:p-6 md:p-8 rounded-xl shadow space-y-4">
-        <h1 className="text-2xl sm:text-3xl font-bold text-gray-800">
+      <div className="bg-gray-50 p- dark:bg-black 5 sm:p-6 md:p-8 rounded-xl shadow space-y-4">
+        <h1 className="text-2xl sm:text-3xl font-bold dark:text-white text-gray-800">
           {plant.plantName}
         </h1>
-        <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+        <p className="text-gray-600 dark:text-white text-sm sm:text-base leading-relaxed">
           {plant.description}
         </p>
 
@@ -50,14 +50,14 @@ const DetailsCart = ({ plant }) => {
       </div>
 
       {/* Form Section */}
-      <div className="bg-white p-5 sm:p-6 md:p-8 rounded-xl shadow max-w-3xl mx-auto">
-        <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center text-gray-800">
+      <div className="bg-white dark:bg-black p-5 sm:p-6 md:p-8 rounded-xl shadow max-w-3xl mx-auto">
+        <h2 className="text-2xl dark:text-white sm:text-3xl font-bold mb-6 text-center text-gray-800">
           Book Consultation
         </h2>
         <form onSubmit={handleSubmit} className="space-y-5">
           {/* Name */}
           <div>
-            <label className="block mb-1 font-medium text-gray-700">
+            <label className="block mb-1 dark:text-white font-medium text-gray-700">
               Name
             </label>
             <input
@@ -73,7 +73,7 @@ const DetailsCart = ({ plant }) => {
 
           {/* Email */}
           <div>
-            <label className="block mb-1 font-medium text-gray-700">
+            <label className="block mb-1 dark:text-white font-medium text-gray-700">
               Email
             </label>
             <input

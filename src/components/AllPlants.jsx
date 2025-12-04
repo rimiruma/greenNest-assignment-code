@@ -25,7 +25,7 @@ const AllPlants = () => {
   return (
     <div className="max-w-[1200px] mx-auto px-6 py-12">
       <h2 className="text-3xl font-bold text-center mb-2 text-green-400">All Plants</h2>
-      <p className="text-center text-gray-500 mb-8">
+      <p className="text-center text-gray-500 mb-8 dark:text-white">
         Explore our collection of beautiful plants for your home and garden.
       </p>
 

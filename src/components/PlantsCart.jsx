@@ -33,7 +33,7 @@ const PlantsCart = ({ plant }) => {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition">
+    <div className="bg-white rounded-xl dark:bg-black shadow-md hover:shadow-lg transition">
       <img
         src={plant.image}
         alt={plant.plantName}
@@ -42,11 +42,11 @@ const PlantsCart = ({ plant }) => {
 
       <div className="p-4">
 
-        <h3 className="text-lg font-semibold text-gray-800">
+        <h3 className="text-lg font-semibold dark:text-white text-gray-800">
           {plant.plantName}
         </h3>
 
-        <p className="text-sm text-gray-500 mb-2">{plant.category}</p>
+        <p className="text-sm text-gray-500 dark:text-white mb-2">{plant.category}</p>
 
         <div className="flex justify-between items-center mb-3">
           <span className="text-green-600 font-bold">${plant.price}</span>

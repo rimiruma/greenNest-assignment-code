@@ -5,13 +5,13 @@ import expert4 from "../assets/expart1.png";
 
 const Meet = () => {
   return (
-    <section className="bg-gray-50 py-16 px-4 sm:px-6 md:px-12">
+    <section className="bg-gray-50 py-16 px-4 sm:px-6 md:px-12 dark:bg-black">
       {/* Title */}
       <div className="text-center max-w-2xl mx-auto mb-12">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+        <h1 className="text-3xl dark:text-white sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4">
           Meet Our Plant Care Experts
         </h1>
-        <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
+        <p className="text-gray-600 leading-relaxed dark:text-white text-sm sm:text-base">
           Our friendly and experienced plant care specialists are here to help
           you every step of the way. Whether it’s watering, sunlight, or soil —
           they know how to make your plants thrive beautifully.
@@ -19,7 +19,7 @@ const Meet = () => {
       </div>
 
       {/* Main Section */}
-      <div className="flex flex-col md:flex-row items-center justify-between bg-green-100 rounded-3xl shadow-lg overflow-hidden max-w-6xl mx-auto">
+      <div className="flex flex-col md:flex-row dark:bg-black items-center justify-between bg-green-100 rounded-3xl shadow-lg overflow-hidden max-w-6xl mx-auto">
         
         {/* Left Side Image */}
         <div className="w-full md:w-1/2 h-[250px] sm:h-[350px] md:h-[450px]">
@@ -32,10 +32,10 @@ const Meet = () => {
 
         {/* Right Side Content */}
         <div className="w-full md:w-1/2 p-6 sm:p-8 md:p-12 flex flex-col justify-center">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-2xl sm:text-3xl dark:text-white md:text-4xl font-bold text-gray-800 mb-4">
             Passionate About Plant Care
           </h2>
-          <p className="text-gray-600 mb-8 leading-relaxed text-sm sm:text-base">
+          <p className="text-gray-600 mb-8 dark:text-white leading-relaxed text-sm sm:text-base">
             Each of our experts brings a unique touch to the world of plant
             care. Together, they help thousands of plant lovers grow their
             green spaces with confidence and joy.
